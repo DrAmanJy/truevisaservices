@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
@@ -39,12 +41,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       alternates: {
-        canonical: `https://truevisaservices.in/blogs/${slug}`,
+        canonical: `${siteUrl}/blogs/${slug}`,
       },
       openGraph: {
         title: `${title} | True Visa`,
         description,
-        url: `https://truevisaservices.in/blogs/${slug}`,
+        url: `${siteUrl}/blogs/${slug}`,
         type: 'article',
         images: data.image ? [{ url: data.image, alt: title }] : undefined,
         ...(data.date && { publishedTime: data.date }),
@@ -92,12 +94,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     { name: frontmatter.title || slug, url: `/blogs/${slug}` },
   ];
 
+  // Get file modification date for dateModified
+  const fileStat = fs.statSync(filePath);
+  const dateModified = fileStat.mtime.toISOString();
+
   const articleSchema = getArticleSchema({
     title: frontmatter.title || slug,
     slug,
     excerpt: frontmatter.excerpt || '',
     author: frontmatter.author || 'True Visa Team',
     date: frontmatter.date || new Date().toISOString(),
+    dateModified,
     image: frontmatter.image,
     category: frontmatter.category,
   });

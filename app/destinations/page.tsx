@@ -48,7 +48,7 @@ export default function DestinationsPage() {
                   <Link href={`/destinations/${dest.slug}`}>
                     <Image referrerPolicy="no-referrer"
                       src={dest.heroImg}
-                      alt={dest.name}
+                      alt={`Migrate to ${dest.name} — immigration destination by True Visa`}
                       fill
                       className="object-cover transition-transform duration-1000 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

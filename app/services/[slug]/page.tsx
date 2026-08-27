@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { servicesData } from '@/lib/data';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
 import PageTransition from '@/components/PageTransition';
 import ConsultationForm from '@/components/ConsultationForm';
 import { notFound } from 'next/navigation';
@@ -34,12 +36,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: {
-      canonical: `https://truevisaservices.in/services/${service.slug}`,
+      canonical: `${siteUrl}/services/${service.slug}`,
     },
     openGraph: {
       title: `${title} | True Visa`,
       description,
-      url: `https://truevisaservices.in/services/${service.slug}`,
+      url: `${siteUrl}/services/${service.slug}`,
       images: [{ url: service.heroImg, alt: service.title }],
     },
     twitter: {

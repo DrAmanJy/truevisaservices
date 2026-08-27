@@ -54,7 +54,9 @@ export const metadata: Metadata = {
     siteName: 'True Visa',
     images: [
       {
-        url: `${siteUrl}/logo.jpeg`,
+        url: `${siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
         alt: 'True Visa — Immigration & Visa Consultancy in Chandigarh',
       },
     ],
@@ -66,7 +68,7 @@ export const metadata: Metadata = {
     title: 'True Visa — Visa & Immigration Consultancy in Chandigarh',
     description:
       'Expert immigration and visa consultancy for students, professionals, and families planning their international journey.',
-    images: [`${siteUrl}/logo.jpeg`],
+    images: [`${siteUrl}/og-image.jpg`],
   },
   robots: {
     index: true,

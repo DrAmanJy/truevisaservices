@@ -3,7 +3,7 @@
  * All schemas follow Schema.org vocabulary and are output as JSON-LD.
  */
 
-const BASE_URL = 'https://truevisaservices.in';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
 import { CONTACT_INFO } from '@/lib/contact';
 
 export interface BreadcrumbItem {
@@ -34,7 +34,12 @@ export function getOrganizationSchema() {
       postalCode: CONTACT_INFO.address.postalCode,
       addressCountry: CONTACT_INFO.address.country,
     },
-    sameAs: [] as string[], // Add real social media URLs when available
+    sameAs: [
+      'https://www.facebook.com/Truevisaservices/',
+      // 'https://www.linkedin.com/company/truevisaservices/', // Add when available
+      // 'https://www.instagram.com/truevisaservices/',        // Add when available
+      // 'https://www.youtube.com/@truevisaservices',           // Add when available
+    ],
   };
 }
 
@@ -61,12 +66,20 @@ export function getLocalBusinessSchema() {
       latitude: 30.7333,
       longitude: 76.7794,
     },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '10:00',
+        closes: '16:00',
+      },
+    ],
     priceRange: '$$',
     areaServed: {
       '@type': 'GeoCircle',
@@ -167,6 +180,7 @@ export function getArticleSchema(article: {
   excerpt: string;
   author: string;
   date: string;
+  dateModified?: string;
   image?: string;
   category?: string;
 }) {
@@ -180,6 +194,7 @@ export function getArticleSchema(article: {
     author: {
       '@type': 'Person',
       name: article.author,
+      url: `${BASE_URL}/about`,
     },
     publisher: {
       '@type': 'Organization',
@@ -190,7 +205,7 @@ export function getArticleSchema(article: {
       },
     },
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.dateModified || article.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}/blogs/${article.slug}`,

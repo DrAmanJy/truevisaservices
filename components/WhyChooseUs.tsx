@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
                transition={{ duration: 1.5 }}
                className="absolute inset-0 w-full h-full"
              >
-               <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" alt="Team meeting" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+               <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" alt="True Visa expert consultants discussing immigration strategy" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
              </motion.div>
              <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent" />
              
@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
                </p>
                <div className="flex items-center gap-4">
                  <div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden relative">
-                   <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Client" fill className="object-cover" sizes="48px" />
+                   <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Satisfied True Visa client testimonial" fill className="object-cover" sizes="48px" />
                  </div>
                  <div>
                    <p className="text-white font-bold">Arjun Sharma</p>

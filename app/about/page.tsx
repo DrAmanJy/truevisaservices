@@ -101,7 +101,7 @@ export default function AboutPage() {
               <div className="relative h-[600px] rounded-3xl overflow-hidden group shadow-2xl">
                 <Image referrerPolicy="no-referrer"
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
-                  alt="Our Team"
+                  alt="True Visa immigration consultancy team in Chandigarh office"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"

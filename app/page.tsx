@@ -13,18 +13,20 @@ import FAQ from '@/components/FAQ';
 import ConsultationForm from '@/components/ConsultationForm';
 import PageTransition from '@/components/PageTransition';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
+
 export const metadata: Metadata = {
   title: 'True Visa — Visa & Immigration Consultant in Chandigarh | Study, Work & PR Visa',
   description:
     'True Visa is a leading immigration and visa consultancy in Chandigarh. We offer expert guidance for study visas, work permits, permanent residency, tourist visas, and family sponsorship to Canada, Australia, UK, USA, Germany, NZ, and UAE. Book a free consultation today.',
   alternates: {
-    canonical: 'https://truevisaservices.in',
+    canonical: siteUrl,
   },
   openGraph: {
     title: 'True Visa — Visa & Immigration Consultant in Chandigarh',
     description:
       'Leading immigration consultancy in Chandigarh offering study visas, work permits, PR, and tourist visas to Canada, Australia, UK, USA, and more. Free consultation available.',
-    url: 'https://truevisaservices.in',
+    url: siteUrl,
   },
 };
 

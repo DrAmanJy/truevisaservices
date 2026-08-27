@@ -3,16 +3,28 @@ import { servicesData, destinationsData } from '@/lib/data';
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'https://truevisaservices.in';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
 
-function getBlogSlugs(): string[] {
+interface BlogInfo {
+  slug: string;
+  lastModified: Date;
+}
+
+function getBlogInfo(): BlogInfo[] {
   const blogsDirectory = path.join(process.cwd(), 'content', 'blogs');
   if (!fs.existsSync(blogsDirectory)) {
     return [];
   }
   return fs.readdirSync(blogsDirectory)
     .filter((f) => f.endsWith('.md'))
-    .map((f) => f.replace(/\.md$/, ''));
+    .map((f) => {
+      const filePath = path.join(blogsDirectory, f);
+      const stat = fs.statSync(filePath);
+      return {
+        slug: f.replace(/\.md$/, ''),
+        lastModified: stat.mtime,
+      };
+    });
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -80,11 +92,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Blog pages
-  const blogSlugs = getBlogSlugs();
-  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${BASE_URL}/blogs/${slug}`,
-    lastModified: now,
+  // Blog pages — use actual file modification dates for accurate lastmod
+  const blogInfos = getBlogInfo();
+  const blogPages: MetadataRoute.Sitemap = blogInfos.map((blog) => ({
+    url: `${BASE_URL}/blogs/${blog.slug}`,
+    lastModified: blog.lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));

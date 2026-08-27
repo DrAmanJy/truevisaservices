@@ -1,0 +1,6 @@
+{
+  "name": "True Visa",
+  "description": "Premium immigration consultancy website with React, Node.js backend, GSAP animations, and MongoDB integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

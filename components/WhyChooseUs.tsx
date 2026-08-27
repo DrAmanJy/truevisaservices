@@ -103,7 +103,7 @@ export default function WhyChooseUs() {
                    <Image referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Client" fill className="object-cover" sizes="48px" />
                  </div>
                  <div>
-                   <p className="text-white font-bold">David Chen</p>
+                   <p className="text-white font-bold">Arjun Sharma</p>
                    <p className="text-white/70 text-sm">Now in Toronto, Canada</p>
                  </div>
                </div>

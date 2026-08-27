@@ -70,14 +70,14 @@ export default function Navbar() {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link href="/" className="flex items-center group">
-          <div className={`relative w-[180px] h-[65px] transition-all duration-300 group-hover:scale-105 ${
+          <div className={`relative w-[140px] md:w-[180px] h-[50px] md:h-[65px] transition-all duration-300 group-hover:scale-105 ${
             (!scrolled && isDarkHero) ? 'bg-white rounded-2xl shadow-lg px-2' : ''
           }`}>
             <Image
               src="/logo.jpeg"
               alt="True Visa Logo"
               fill
-              className={`object-contain ${(!scrolled && isDarkHero) ? 'p-2 rounded-2xl' : 'mix-blend-multiply'}`}
+              className={`object-contain object-left ${(!scrolled && isDarkHero) ? 'p-2 rounded-2xl' : 'mix-blend-multiply'}`}
               priority
             />
           </div>

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-navy: #2A2522;
+  --color-navy-light: #3D3530;
+  --color-royal: #A8866E;
+  --color-royal-light: #C2A38E;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E8C1;
+}
+
+body {
+  background-color: #FAFAF8;
+  color: #2A2522;
+  overflow-x: hidden;
+}
+

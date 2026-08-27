@@ -12,8 +12,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://truevisaservices.vercel.app';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://truevisaservices.in'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'True Visa — Visa & Immigration Consultancy in Chandigarh',
     template: '%s | True Visa',
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     'USA visa consultant',
     'True Visa',
   ],
-  authors: [{ name: 'True Visa', url: 'https://truevisaservices.in' }],
+  authors: [{ name: 'True Visa', url: siteUrl }],
   creator: 'True Visa',
   publisher: 'True Visa',
   formatDetection: {
@@ -48,13 +50,11 @@ export const metadata: Metadata = {
     title: 'True Visa — Visa & Immigration Consultancy in Chandigarh',
     description:
       'Expert immigration and visa consultancy for students, professionals, and families. Study visas, work permits, PR, and tourist visas for Canada, Australia, UK, USA, and more.',
-    url: 'https://truevisaservices.in',
+    url: siteUrl,
     siteName: 'True Visa',
     images: [
       {
-        url: '/logo.jpeg',
-        width: 800,
-        height: 600,
+        url: `${siteUrl}/logo.jpeg`,
         alt: 'True Visa — Immigration & Visa Consultancy in Chandigarh',
       },
     ],
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: 'True Visa — Visa & Immigration Consultancy in Chandigarh',
     description:
       'Expert immigration and visa consultancy for students, professionals, and families planning their international journey.',
-    images: ['/logo.jpeg'],
+    images: [`${siteUrl}/logo.jpeg`],
   },
   robots: {
     index: true,

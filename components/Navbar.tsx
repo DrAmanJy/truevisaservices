@@ -32,6 +32,8 @@ const destinationLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileDestinationsOpen, setMobileDestinationsOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -167,18 +169,60 @@ export default function Navbar() {
               <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">Home</Link>
               <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">About Us</Link>
               
-              <div className="flex flex-col gap-3 border-l-2 border-gray-100 pl-4 ml-2">
-                <Link href="/services" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">Services Overview</Link>
-                {servicesLinks.map(link => (
-                  <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 hover:text-gold">{link.name}</Link>
-                ))}
+              {/* Services Accordion */}
+              <div className="flex flex-col">
+                <button 
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className="flex items-center justify-between text-navy font-bold text-lg hover:text-gold w-full text-left"
+                >
+                  Services
+                  <ChevronDown className={`w-5 h-5 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {mobileServicesOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="flex flex-col gap-4 overflow-hidden"
+                    >
+                      <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100 ml-2 mt-4">
+                        <Link href="/services" onClick={() => setMobileMenuOpen(false)} className="text-navy font-semibold hover:text-gold">Services Overview</Link>
+                        {servicesLinks.map(link => (
+                          <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 hover:text-gold">{link.name}</Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
-              <div className="flex flex-col gap-3 border-l-2 border-gray-100 pl-4 ml-2">
-                <Link href="/destinations" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">Destinations Overview</Link>
-                {destinationLinks.map(link => (
-                  <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 hover:text-gold">{link.name}</Link>
-                ))}
+              {/* Destinations Accordion */}
+              <div className="flex flex-col">
+                <button 
+                  onClick={() => setMobileDestinationsOpen(!mobileDestinationsOpen)}
+                  className="flex items-center justify-between text-navy font-bold text-lg hover:text-gold w-full text-left"
+                >
+                  Destinations
+                  <ChevronDown className={`w-5 h-5 transition-transform ${mobileDestinationsOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {mobileDestinationsOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="flex flex-col gap-4 overflow-hidden"
+                    >
+                      <div className="flex flex-col gap-3 pl-4 border-l-2 border-gray-100 ml-2 mt-4">
+                        <Link href="/destinations" onClick={() => setMobileMenuOpen(false)} className="text-navy font-semibold hover:text-gold">Destinations Overview</Link>
+                        {destinationLinks.map(link => (
+                          <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 hover:text-gold">{link.name}</Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <Link href="/blogs" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">Blogs</Link>

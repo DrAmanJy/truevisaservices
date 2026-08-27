@@ -42,6 +42,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent background scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   const isDarkHero = pathname !== '/';
 
   const navTextColorClass = scrolled ? 'text-[#2A2522]' : (isDarkHero ? 'text-gray-200' : 'text-[#2A2522]');
@@ -173,9 +185,15 @@ export default function Navbar() {
               <Link href="/faq" onClick={() => setMobileMenuOpen(false)} className="text-navy font-bold text-lg hover:text-gold">FAQ</Link>
 
               <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-gray-100">
-                <CallButton className="w-full" />
-                <WhatsAppButton className="w-full" />
-                <ContactLink text="Book Free Consultation" variant="secondary" className="w-full mt-2" />
+                <div onClick={() => setMobileMenuOpen(false)}>
+                  <CallButton className="w-full" />
+                </div>
+                <div onClick={() => setMobileMenuOpen(false)}>
+                  <WhatsAppButton className="w-full" />
+                </div>
+                <div onClick={() => setMobileMenuOpen(false)}>
+                  <ContactLink text="Book Free Consultation" variant="secondary" className="w-full mt-2" />
+                </div>
               </div>
             </div>
           </motion.div>

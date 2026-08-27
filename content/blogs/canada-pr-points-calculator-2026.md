@@ -3,7 +3,7 @@ title: "Canada PR Points Calculator: How Many Points Do You Need in 2026?"
 excerpt: "Use our Canada PR points calculator 2026 guide to find out how many CRS points you need for Express Entry. Check eligibility and raise your score."
 slug: "canada-pr-points-calculator-2026"
 category: "Permanent Residency"
-author: "Sarah Johnson"
+author: "Dr. Aman Jyoti"
 date: "August 24, 2026"
 image: "https://images.unsplash.com/photo-1555899434-94d1368aa7af?q=80&w=2000&auto=format&fit=crop"
 ---

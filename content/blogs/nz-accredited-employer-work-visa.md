@@ -3,7 +3,7 @@ title: "New Zealand Accredited Employer Work Visa: What You Must Know"
 excerpt: "Learn everything about the NZ accredited employer work visa. Discover the AEWV application process, salary rules, and how to find an accredited employer NZ."
 slug: "nz-accredited-employer-work-visa"
 category: "Work Visa"
-author: "Sarah Johnson"
+author: "Dr. Aman Jyoti"
 date: "August 5, 2026"
 image: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=2000&auto=format&fit=crop"
 ---

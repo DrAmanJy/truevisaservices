@@ -3,7 +3,7 @@ title: "UK Student Visa to Work Visa: The Complete Transition Guide"
 excerpt: "Learn how to navigate the UK student visa to work visa transition. We explain the Graduate Route, Skilled Worker visa, and how to find sponsorship easily."
 slug: "uk-student-visa-to-work-visa-transition"
 category: "Study Visa"
-author: "Michael Brown"
+author: "Vikram Singh"
 date: "August 10, 2026"
 image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop"
 ---

@@ -3,7 +3,7 @@ title: "UK Skilled Worker Visa Sponsorship: What Employers Must Provide"
 excerpt: "Learn the exact UK skilled worker visa sponsorship requirements. A guide for employers on sponsor licences, Certificate of Sponsorship (CoS), and costs."
 slug: "uk-skilled-worker-visa-sponsorship-requirements"
 category: "Work Visa"
-author: "David Chen"
+author: "Rahul Verma"
 date: "August 1, 2026"
 image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop"
 ---

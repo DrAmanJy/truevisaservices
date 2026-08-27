@@ -3,7 +3,7 @@ title: "Canada Express Entry vs. PNP: Which Route is Best for You?"
 excerpt: "Deciding between Canada Express Entry vs PNP? Compare processing times, costs, and requirements to choose the best Canada PR pathway for your profile."
 slug: "canada-express-entry-vs-pnp"
 category: "Permanent Residency"
-author: "David Chen"
+author: "Rahul Verma"
 date: "August 20, 2026"
 image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop"
 ---

@@ -3,7 +3,7 @@ title: "Australia PR Pathways 2026: Subclass 189 vs 190 vs 491 Compared"
 excerpt: "Compare the top Australia PR pathways 189 190 491 for 2026. Understand the differences, requirements, and which skilled visa is best for your profile."
 slug: "australia-pr-pathways-189-190-491"
 category: "Permanent Residency"
-author: "Emily White"
+author: "Priya Sharma"
 date: "August 15, 2026"
 image: "https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?q=80&w=2000&auto=format&fit=crop"
 ---

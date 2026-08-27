@@ -167,7 +167,7 @@ export default function ConsultationForm() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all text-slate-800"
-                      placeholder="John Doe"
+                      placeholder="Rahul Sharma"
                     />
                   </div>
                   <div className="space-y-1">
@@ -179,7 +179,7 @@ export default function ConsultationForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all text-slate-800"
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+91 98765 43210"
                     />
                   </div>
                 </div>
@@ -193,7 +193,7 @@ export default function ConsultationForm() {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all text-slate-800"
-                    placeholder="john@example.com"
+                    placeholder="rahul@example.com"
                   />
                 </div>
 

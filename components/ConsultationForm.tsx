@@ -3,6 +3,25 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Send, CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
+import { submitConsultationAction } from '@/app/actions/consultation';
+import Dropdown from './Dropdown';
+
+const serviceOptions = [
+  { value: 'Study Visa', label: 'Study Visa' },
+  { value: 'Work Visa', label: 'Work Visa' },
+  { value: 'Permanent Residency', label: 'Permanent Residency' },
+  { value: 'Tourist Visa', label: 'Tourist Visa' },
+  { value: 'Business Visa', label: 'Business Visa' },
+];
+
+const destinationOptions = [
+  { value: 'Canada', label: 'Canada' },
+  { value: 'Australia', label: 'Australia' },
+  { value: 'UK', label: 'United Kingdom' },
+  { value: 'USA', label: 'United States' },
+  { value: 'Europe', label: 'Europe / Schengen' },
+  { value: 'Other', label: 'Other' },
+];
 
 export default function ConsultationForm() {
   const [formData, setFormData] = useState({
@@ -21,29 +40,27 @@ export default function ConsultationForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleDropdownChange = (name: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/consultations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: typeof formData.name === 'string' ? formData.name : String(formData.name),
-          phone: typeof formData.phone === 'string' ? formData.phone : String(formData.phone),
-          email: typeof formData.email === 'string' ? formData.email : String(formData.email),
-          service: typeof formData.service === 'string' ? formData.service : String(formData.service),
-          destination: typeof formData.destination === 'string' ? formData.destination : String(formData.destination),
-          message: typeof formData.message === 'string' ? formData.message : String(formData.message),
-        }),
+      const res = await submitConsultationAction({
+        name: typeof formData.name === 'string' ? formData.name : String(formData.name),
+        phone: typeof formData.phone === 'string' ? formData.phone : String(formData.phone),
+        email: typeof formData.email === 'string' ? formData.email : String(formData.email),
+        service: typeof formData.service === 'string' ? formData.service : String(formData.service),
+        destination: typeof formData.destination === 'string' ? formData.destination : String(formData.destination),
+        message: typeof formData.message === 'string' ? formData.message : String(formData.message),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to submit application');
+      if (!res.success) {
+        throw new Error(res.error || 'Failed to submit application');
       }
 
       setStatus('success');
@@ -200,38 +217,27 @@ export default function ConsultationForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-1">
                     <label className="text-[10px] uppercase font-bold text-slate-400">Preferred Service</label>
-                    <select 
+                    <Dropdown
                       required
                       name="service"
                       value={formData.service}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all text-slate-800"
-                    >
-                      <option value="">Select Service</option>
-                      <option value="Study Visa">Study Visa</option>
-                      <option value="Work Visa">Work Visa</option>
-                      <option value="Permanent Residency">Permanent Residency</option>
-                      <option value="Tourist Visa">Tourist Visa</option>
-                      <option value="Business Visa">Business Visa</option>
-                    </select>
+                      onChange={handleDropdownChange}
+                      options={serviceOptions}
+                      placeholder="Select Service"
+                      error={status === 'error' && !formData.service}
+                    />
                   </div>
                   <div className="space-y-1">
                     <label className="text-[10px] uppercase font-bold text-slate-400">Destination</label>
-                    <select 
+                    <Dropdown
                       required
                       name="destination"
                       value={formData.destination}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all text-slate-800"
-                    >
-                      <option value="">Select Country</option>
-                      <option value="Canada">Canada</option>
-                      <option value="Australia">Australia</option>
-                      <option value="UK">United Kingdom</option>
-                      <option value="USA">United States</option>
-                      <option value="Europe">Europe / Schengen</option>
-                      <option value="Other">Other</option>
-                    </select>
+                      onChange={handleDropdownChange}
+                      options={destinationOptions}
+                      placeholder="Select Country"
+                      error={status === 'error' && !formData.destination}
+                    />
                   </div>
                 </div>
 

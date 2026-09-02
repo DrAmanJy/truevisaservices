@@ -11,7 +11,7 @@ True Visa Immigration Services is a trusted consultancy with over 10 years of ex
 We offer the following visa and immigration services:
 
 - **Study Visa**: University selection, application, and student visa processing for international education.
-- **Work Visa**: Work permits and employment visas for skilled workers, professionals, and intracompany transferees.
+
 - **Tourist Visa**: Visitor visa processing for leisure travel and family visits.
 - **Permanent Residency (PR)**: Point-based immigration systems like Canada Express Entry and Australia SkillSelect.
 - **Business & Investor Visa**: Visas for entrepreneurs and investors looking to establish businesses overseas.
@@ -21,20 +21,20 @@ We offer the following visa and immigration services:
 
 We provide immigration services for the following countries:
 
-- Canada — Express Entry, Provincial Nominee Programs, Study Permits, Work Permits
-- Australia — Subclass 189/190/491, Student Visa (500), Temporary Skill Shortage Visa
-- United Kingdom — Skilled Worker Visa, Student Visa, Global Talent Visa, Graduate Route
-- United States — F-1 Student Visa, H-1B Work Visa, L-1 Transfer, EB-5 Investor Visa
-- Germany — EU Blue Card, Job Seeker Visa, Student Visa, Opportunity Card (Chancenkarte)
-- New Zealand — Skilled Migrant Category, Essential Skills Work Visa, Student Visa
-- UAE — Golden Visa, Employment Visa, Freelance Visa, Investor Visa
+- Canada — Express Entry, Provincial Nominee Programs, Study Permits
+- Australia — Subclass 189/190/491, Student Visa (500)
+- United Kingdom — Student Visa, Global Talent Visa, Graduate Route
+- United States — F-1 Student Visa, L-1 Transfer, EB-5 Investor Visa
+- Germany — Student Visa
+- New Zealand — Skilled Migrant Category, Student Visa
+- UAE — Golden Visa, Freelance Visa, Investor Visa
 
 ## Key Pages
 
 - Homepage: /
 - About Us: /about
 - Services Overview: /services
-- Individual Services: /services/study-visa, /services/work-visa, /services/tourist-visa, /services/permanent-residency, /services/business-visa, /services/family-visa
+- Individual Services: /services/study-visa, /services/tourist-visa, /services/permanent-residency, /services/business-visa, /services/family-visa
 - Destinations Overview: /destinations
 - Individual Destinations: /destinations/canada, /destinations/australia, /destinations/united-kingdom, /destinations/united-states, /destinations/germany, /destinations/new-zealand, /destinations/uae
 - Blog / Immigration Insights: /blogs
@@ -48,9 +48,7 @@ Our blog covers expert immigration guides, visa tips, and policy updates includi
 - Canada PR Points Calculator and CRS score guides
 - Express Entry vs Provincial Nominee Program comparisons
 - Australia PR pathways (Subclass 189, 190, 491) comparisons
-- UK student visa to work visa transition guides
-- New Zealand Accredited Employer Work Visa requirements
-- UK Skilled Worker visa sponsorship requirements
+
 - Processing times, document checklists, and fee breakdowns by country
 
 ## Contact Information

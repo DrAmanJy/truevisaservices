@@ -12,7 +12,7 @@ import ContactLink from './contact/ContactLink';
 
 const servicesLinks = [
   { name: 'Study Visa', href: '/services/study-visa' },
-  { name: 'Work Visa', href: '/services/work-visa' },
+
   { name: 'Tourist Visa', href: '/services/tourist-visa' },
   { name: 'Permanent Residency', href: '/services/permanent-residency' },
   { name: 'Business Visa', href: '/services/business-visa' },

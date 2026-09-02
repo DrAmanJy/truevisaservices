@@ -46,8 +46,8 @@ export const faqs: FAQItem[] = [
     answer: 'Express Entry is an online system used by the Canadian government to manage applications for permanent residence from skilled workers. It uses a points-based system (Comprehensive Ranking System or CRS) to rank candidates based on factors like age, education, language skills, and work experience.',
   },
   {
-    question: 'Can my family accompany me on a student or work visa?',
-    answer: 'In many cases, yes. Countries like Canada, Australia, and the UK often allow spouses and dependent children to accompany the primary visa holder. Spouses may even be eligible for open work permits. We will guide you on the dependent visa process based on your chosen destination.',
+    question: 'Can my family accompany me on a student visa?',
+    answer: 'In many cases, yes. Countries like Canada, Australia, and the UK often allow spouses and dependent children to accompany the primary visa holder. We will guide you on the dependent visa process based on your chosen destination.',
   },
   {
     question: 'What documents are generally required for a visa application?',

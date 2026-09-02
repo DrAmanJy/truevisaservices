@@ -15,22 +15,7 @@ export const servicesData = [
       { q: 'Is IELTS mandatory?', a: 'While highly recommended, some universities offer waivers based on your medium of instruction in previous degrees.' }
     ]
   },
-  {
-    slug: 'work-visa',
-    title: 'Work Visa',
-    metaTitle: 'Work Visa Consultancy — Work Abroad with Professional Guidance',
-    description: 'Expert work visa and work permit consultancy for skilled professionals. True Visa helps you secure employment visas for Canada, Australia, UK, USA, and other countries.',
-    subtitle: 'Accelerate your career on a global scale.',
-    heroImg: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070',
-    intro: 'Take your professional journey across borders. We assist skilled workers, intracompany transferees, and professionals in securing the right work permits for their career growth.',
-    eligibility: ['Valid Job Offer/Sponsorship', 'Relevant Work Experience', 'Educational Qualifications', 'Clean Background Check'],
-    process: ['Profile Evaluation', 'Employer Sponsorship Validation', 'Document Preparation', 'Work Permit Application', 'Visa Interview Preparation'],
-    benefits: ['Earn in strong currencies', 'International work culture exposure', 'Bring your dependents', 'Step towards permanent residency'],
-    faq: [
-      { q: 'Do I need a job offer first?', a: 'In most cases, yes. However, some independent skilled migration pathways allow you to apply without a job offer.' },
-      { q: 'Can my family join me?', a: 'Yes, most work visas allow you to bring your spouse and dependent children.' }
-    ]
-  },
+
   {
     slug: 'tourist-visa',
     title: 'Tourist Visa',
@@ -101,7 +86,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=2011',
     intro: 'Canada offers a high standard of living, universal healthcare, and excellent education, making it the top choice for skilled professionals and students globally.',
     whyChoose: ['Welcoming immigration policies', 'Universal healthcare system', 'High-quality education', 'Safe and diverse society'],
-    popularVisas: ['Express Entry (PR)', 'Study Permit', 'Work Permit', 'Provincial Nominee Programs'],
+    popularVisas: ['Express Entry (PR)', 'Study Permit', 'Provincial Nominee Programs'],
     lifestyle: 'Canadians enjoy a high quality of life with a strong emphasis on work-life balance, outdoor activities, and multiculturalism.',
     requirements: ['Educational Credential Assessment (ECA)', 'Language Proficiency (IELTS/CELPIP)', 'Proof of Funds', 'Clean Police Record']
   },
@@ -112,7 +97,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=2130',
     intro: 'Known for its robust economy and stunning natural environment, Australia provides immense opportunities for skilled migrants and international students.',
     whyChoose: ['Strong, stable economy', 'World-class universities', 'High minimum wage', 'Incredible climate and nature'],
-    popularVisas: ['Subclass 189/190/491 (Skilled PR)', 'Student Visa (Subclass 500)', 'Temporary Skill Shortage Visa'],
+    popularVisas: ['Subclass 189/190/491 (Skilled PR)', 'Student Visa (Subclass 500)'],
     lifestyle: 'The Australian lifestyle is famously relaxed and outdoor-oriented, centered around beaches, sports, and a thriving cafe culture.',
     requirements: ['Skills Assessment', 'High English Proficiency', 'Points Test', 'Health Examinations']
   },
@@ -123,7 +108,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1520986606214-8b456906c813?q=80&w=2069',
     intro: 'The UK combines rich history with cutting-edge innovation. It is a premier destination for top-tier education and career acceleration.',
     whyChoose: ['Globally recognized universities', 'Free healthcare via NHS', 'Gateway to Europe', 'Dynamic job market'],
-    popularVisas: ['Student Visa', 'Skilled Worker Visa', 'Global Talent Visa', 'Innovator Founder Visa'],
+    popularVisas: ['Student Visa', 'Global Talent Visa', 'Innovator Founder Visa'],
     lifestyle: 'Living in the UK offers diverse experiences, from the fast-paced life of London to the historic and peaceful countryside.',
     requirements: ['Certificate of Sponsorship (for work)', 'CAS (for study)', 'UKVI IELTS', 'Immigration Health Surcharge']
   },
@@ -134,7 +119,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2070',
     intro: 'The USA remains the global epicenter for technology, business, and higher education, attracting the brightest minds from around the world.',
     whyChoose: ['Highest earning potential', 'Ivy League institutions', 'Hub for tech and startups', 'Cultural melting pot'],
-    popularVisas: ['F-1 Student Visa', 'H-1B Work Visa', 'L-1 Intracompany Transfer', 'EB-5 Investor Visa'],
+    popularVisas: ['F-1 Student Visa', 'L-1 Intracompany Transfer', 'EB-5 Investor Visa'],
     lifestyle: 'The American lifestyle is diverse, offering everything from bustling metropolises like New York to the tech-driven environment of Silicon Valley.',
     requirements: ['SEVIS fee payment (students)', 'Employer Petition (I-129)', 'DS-160 Form', 'In-person Visa Interview']
   },
@@ -144,8 +129,8 @@ export const destinationsData = [
     subtitle: 'Strong economy and excellent healthcare system.',
     heroImg: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070',
     intro: 'As the economic powerhouse of Europe, Germany offers unparalleled opportunities in engineering, IT, and manufacturing, along with tuition-free education.',
-    whyChoose: ['Zero/Low tuition fees', 'Strongest EU economy', '18-month post-study work visa', 'Excellent social security'],
-    popularVisas: ['EU Blue Card', 'Job Seeker Visa', 'Student Visa', 'Opportunity Card (Chancenkarte)'],
+    whyChoose: ['Zero/Low tuition fees', 'Strongest EU economy', 'Excellent social security'],
+    popularVisas: ['Student Visa'],
     lifestyle: 'Germany offers a highly organized, safe, and efficient lifestyle with excellent public transport and a deep appreciation for culture and history.',
     requirements: ['Blocked Account (students)', 'German Language proficiency (often required)', 'Degree recognition (ZAB)', 'Health Insurance']
   },
@@ -156,7 +141,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=2070',
     intro: 'Famed for its breathtaking scenery and friendly locals, New Zealand is the perfect destination for those seeking a safe, peaceful, and progressive environment.',
     whyChoose: ['Safest country globally', 'Excellent work-life balance', 'Family-friendly environment', 'Stunning natural beauty'],
-    popularVisas: ['Skilled Migrant Category', 'Essential Skills Work Visa', 'Student Visa', 'Working Holiday Visa'],
+    popularVisas: ['Skilled Migrant Category', 'Student Visa'],
     lifestyle: 'New Zealanders value a relaxed pace of life, strong community ties, and spending significant time exploring the great outdoors.',
     requirements: ['NZQA Assessment', 'Expression of Interest (EOI)', 'Good health and character', 'Job offer (often required)']
   },
@@ -167,7 +152,7 @@ export const destinationsData = [
     heroImg: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070',
     intro: 'The UAE is a rapidly growing global hub offering unmatched luxury, tax-free salaries, and state-of-the-art infrastructure for professionals and businesses.',
     whyChoose: ['Zero income tax', 'Extremely low crime rate', 'World-class infrastructure', 'Strategic global location'],
-    popularVisas: ['Golden Visa (Long-term PR)', 'Employment Visa', 'Freelance Visa', 'Investor Visa'],
+    popularVisas: ['Golden Visa (Long-term PR)', 'Investor Visa'],
     lifestyle: 'Living in Dubai or Abu Dhabi means experiencing a cosmopolitan, luxurious, and fast-paced lifestyle with incredible shopping and dining.',
     requirements: ['Employer Sponsorship (standard)', 'Property/Business Investment (Golden Visa)', 'Medical Fitness Test', 'Emirates ID Registration']
   }

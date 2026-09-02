@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Calendar, User, Search, Filter } from 'lucide-react';
 
-const categories = ['All', 'Study Visa', 'Work Visa', 'Permanent Residency', 'Visa Tips', 'Immigration News'];
+const categories = ['All', 'Study Visa', 'Permanent Residency', 'Visa Tips', 'Immigration News'];
 
 const allBlogs = [
   {
@@ -44,39 +44,6 @@ const allBlogs = [
     slug: 'australia-pr-pathways-189-190-491',
     featured: false,
   },
-  {
-    id: 4,
-    title: 'UK Student Visa to Work Visa Transition: Complete Guide',
-    excerpt: 'Learn how to navigate the UK student visa to work visa transition. We explain the Graduate Route, Skilled Worker visa, and how to find sponsorship easily.',
-    category: 'Study Visa',
-    author: 'Vikram Singh',
-    date: 'August 10, 2026',
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop',
-    slug: 'uk-student-visa-to-work-visa-transition',
-    featured: false,
-  },
-  {
-    id: 5,
-    title: 'NZ Accredited Employer Work Visa Requirements Explained',
-    excerpt: 'Learn everything about the NZ accredited employer work visa. Discover the AEWV application process, salary rules, and how to find an accredited employer NZ.',
-    category: 'Work Visa',
-    author: 'Dr. Aman Jyoti',
-    date: 'August 5, 2026',
-    image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=2000&auto=format&fit=crop',
-    slug: 'nz-accredited-employer-work-visa',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'UK Skilled Worker Visa Sponsorship Requirements Explained',
-    excerpt: 'Learn the exact UK skilled worker visa sponsorship requirements. A guide for employers on sponsor licences, Certificate of Sponsorship (CoS), and costs.',
-    category: 'Work Visa',
-    author: 'Rahul Verma',
-    date: 'August 1, 2026',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop',
-    slug: 'uk-skilled-worker-visa-sponsorship-requirements',
-    featured: false,
-  }
 ];
 
 export default function BlogsPage() {

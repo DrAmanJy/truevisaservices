@@ -53,7 +53,7 @@ export default function Footer() {
             <h4 className="text-white font-bold text-lg mb-8 uppercase tracking-wider text-sm">Visa Services</h4>
             <ul className="space-y-4 font-medium">
               <li><Link href="/services/study-visa" className="text-[#BDB5AD] hover:text-gold transition-colors">Study Visa</Link></li>
-              <li><Link href="/services/work-visa" className="text-[#BDB5AD] hover:text-gold transition-colors">Work Visa</Link></li>
+
               <li><Link href="/services/permanent-residency" className="text-[#BDB5AD] hover:text-gold transition-colors">Permanent Residency</Link></li>
               <li><Link href="/services/business-visa" className="text-[#BDB5AD] hover:text-gold transition-colors">Business Visa</Link></li>
               <li><Link href="/services/tourist-visa" className="text-[#BDB5AD] hover:text-gold transition-colors">Tourist Visa</Link></li>

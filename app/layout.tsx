@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     template: '%s | True Visa',
   },
   description:
-    'True Visa is a trusted immigration and visa consultancy in Chandigarh. Expert guidance for study visas, work permits, PR, tourist visas, and family sponsorship to Canada, Australia, UK, USA, Germany, New Zealand, and UAE.',
+    'True Visa is a trusted immigration and visa consultancy in Chandigarh. Expert guidance for study visas, PR, tourist visas, and family sponsorship to Canada, Australia, UK, USA, Germany, New Zealand, and UAE.',
   keywords: [
     'visa consultant in Chandigarh',
     'immigration consultancy',
     'visa services',
     'study visa consultant',
-    'work visa consultant',
+
     'PR visa consultant',
     'Canada immigration consultant',
     'Australia visa consultant',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'True Visa — Visa & Immigration Consultancy in Chandigarh',
     description:
-      'Expert immigration and visa consultancy for students, professionals, and families. Study visas, work permits, PR, and tourist visas for Canada, Australia, UK, USA, and more.',
+      'Expert immigration and visa consultancy for students, professionals, and families. Study visas, PR, and tourist visas for Canada, Australia, UK, USA, and more.',
     url: siteUrl,
     siteName: 'True Visa',
     images: [

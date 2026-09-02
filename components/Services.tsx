@@ -11,12 +11,7 @@ const services = [
     slug: 'study-visa',
     description: 'Access world-class education with expert guidance on university selection and student visa applications.',
   },
-  {
-    icon: Briefcase,
-    title: 'Work Visa',
-    slug: 'work-visa',
-    description: 'Accelerate your career globally. We handle employer-sponsored and independent skilled worker visas.',
-  },
+
   {
     icon: PlaneTakeoff,
     title: 'Tourist Visa',

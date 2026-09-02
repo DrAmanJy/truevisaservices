@@ -8,7 +8,7 @@ import Dropdown from './Dropdown';
 
 const serviceOptions = [
   { value: 'Study Visa', label: 'Study Visa' },
-  { value: 'Work Visa', label: 'Work Visa' },
+
   { value: 'Permanent Residency', label: 'Permanent Residency' },
   { value: 'Tourist Visa', label: 'Tourist Visa' },
   { value: 'Business Visa', label: 'Business Visa' },

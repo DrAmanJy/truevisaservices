@@ -11,7 +11,7 @@ const blogs = [
     title: 'New Immigration Policies for Canada in 2026',
     excerpt: 'Discover the latest updates and changes in Canadian immigration policies that could affect your PR application.',
     category: 'Immigration News',
-    author: 'Dr. Aman Jyoti',
+    author: 'Aarav',
     date: 'August 15, 2026',
     image: 'https://images.unsplash.com/photo-1555899434-94d1368aa7af?q=80&w=2000&auto=format&fit=crop',
     slug: 'new-immigration-policies-canada-2026',
